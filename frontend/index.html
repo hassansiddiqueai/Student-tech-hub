@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Tech Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Tech Hub</h1>
+        <p>Your gateway to upcoming technical events and workshops.</p>
+    </header>
+
+    <main>
+        <section class="events-section">
+            <h2>Upcoming Events</h2>
+            <button id="load-events-btn">Load Events</button>
+            <ul id="events-list">
+                <!-- Events will be loaded here dynamically -->
+            </ul>
+        </section>
+
+        <section class="registration-section">
+            <h2>Register</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Submit Registration</button>
+            </form>
+            <div id="registration-message"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
